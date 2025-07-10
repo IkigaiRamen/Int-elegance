@@ -158,9 +158,9 @@ This project is licensed under the MIT License.
 
 ## 📬 Contact
 For questions, suggestions, or support:
-- [Your Name](mailto:your.email@example.com)
+- [Ram Khammessi](mailto:ram.khammessi@esprit.tn)
 - GitHub Issues
 
 ---
 
-> Made with ❤️ by the Intlegance Team 
+> Made with ❤️ by Ram Khammessi
