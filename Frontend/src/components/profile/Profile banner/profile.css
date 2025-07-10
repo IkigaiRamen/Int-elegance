@@ -1,0 +1,41 @@
+/* General box-sizing rules */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+label {
+    display: inline-block; /* Ensures the label fits the content */
+    position: relative; /* For absolute positioning of the overlay */
+}
+
+.profile-teacher {
+    display: inline-block; /* Fit the teacher profile container to the image */
+}
+
+.overlay {
+    position: absolute; /* Positioned over the label */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    display: flex; /* Center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Smooth transition for visibility */
+    border-radius: 8px; /* Rounded corners for overlay */
+}
+
+.profile-teacher:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.upload-icon {
+    font-size: 24px; /* Adjust icon size */
+}
+
+.upload-text {
+    margin-left: 5px; /* Space between icon and text */
+}

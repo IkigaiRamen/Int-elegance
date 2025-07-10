@@ -1,0 +1,31 @@
+.sidebar {
+    width: 250px;
+    transition: width 0.3s;
+    overflow: hidden;
+    background-color: #f8f9fa; /* Change to your desired background color */
+  }
+  
+  .sidebar.collapsed {
+    width: 60px; /* Adjust width when collapsed */
+  }
+  
+  .sidebar .logo-text {
+    display: inline; /* Default display */
+    transition: opacity 0.3s; /* Transition for logo text */
+  }
+  
+  .sidebar.collapsed .logo-text {
+    opacity: 0; /* Hide text when collapsed */
+  }
+  
+  .menu-list li {
+    /* Style your menu items */
+    transition: padding 0.3s;
+  }
+  
+  .menu-list li:hover {
+    background-color: #e9ecef; /* Highlight effect on hover */
+  }
+  
+  /* Add other necessary styles for your sidebar items here */
+  

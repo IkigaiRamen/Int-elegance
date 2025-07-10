@@ -1,0 +1,34 @@
+/* Make text bold for parent tasks only */
+.e-row:not(.e-altrow) .e-rowcell {
+  font-weight: bold; /* Apply bold text */
+  background-color: #CBC3E3; /* Light gray background */
+  
+}
+
+.e-gantt .e-gantt-tree-grid-pane .e-columnheader, 
+.e-gantt .e-gantt-tree-grid-pane .e-headercell {
+  color: #333; /* Dark text for contrast */
+
+}
+/* Child rows: Ensure text is not bold and background is a darker blue shade */
+.e-altrow .e-rowcell {
+  font-weight: normal; /* Revert to normal weight for child tasks */
+}
+  .priority-high {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .priority-medium {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .priority-low {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .priority-default {
+    color: gray;
+  }

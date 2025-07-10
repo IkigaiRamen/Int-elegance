@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.role-background {
+  background-image: url('gradient.jpg'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  position: fixed; /* Make it fixed to cover the viewport */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  z-index: -1; /* Behind other content */
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+.rowspecial {
+  display: flex; /* Use flexbox to align cards */
+  justify-content: center; /* Center cards in the row */
+  flex-wrap: wrap; /* Allow cards to wrap if there are more than 2 */
+}
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.cardSpecial {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin: 10px 0;
+  transition: ease all 2.3s;
+  perspective: 1200px;
+}
+
+.cardSpecial:hover .cover {
+  transform: rotateX(0deg) rotateY(-180deg);
+}
+
+.cardSpecial:hover .cover:before {
+  transform: translateZ(30px);
+}
+
+.cardSpecial:hover .cover:after {
+  background-color: black;
+}
+
+.cardSpecial:hover h1 {
+  transform: translateZ(100px);
+}
+
+.cardSpecial:hover .price {
+  transform: translateZ(60px);
+}
+
+
+
+.cardSpecial .cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.cardSpecial .cover:before {
+  content: '';
+  position: absolute;
+  border: 5px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  transition: ease all 2.3s;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+
+.cardSpecial .cover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  transition: ease all 1.3s;
+  background: rgba(0, 0, 0, .4);
+}
+
+.cardSpecial.item-a .cover {
+  background-image: url('company.jpg'); /* Ensure correct case */
+  height: 400px; /* Adjust to fit card size */
+  width: 100%; /* Fill the width of the card */
+  background-size: cover; /* Ensure the background image covers the area */
+  background-position: center; /* Center the background image */
+}
+
+.cardSpecial.item-b .cover {
+  background-image: url('employee.jpg'); /* Ensure correct case */
+  height: 400px; /* Adjust to fit card size */
+  width: 100%; /* Fill the width of the card */
+  background-size: cover; /* Ensure the background image covers the area */
+  background-position: center; /* Center the background image */
+}
+
+
+
+.cardSpecial h1 {
+  font-weight: 600;
+  position: absolute;
+  bottom: 55px;
+  left: 50px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 3;
+  font-size: 3em;
+  transform: translateZ(0);
+}
+
+.cardSpecial .price {
+  font-weight: 200;
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 4;
+  font-size: 2em;
+  transform: translateZ(0);
+}
+
+.cardSpecial-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #4c3575;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  transform: translateZ(-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardSpecial-back p {
+  transform-style: preserve-3d;
+  transition: ease transform 2.3s, ease background .5s;
+  transform: translateZ(-1px) rotateY(-180deg);
+  background: transparent;
+  border: 1px solid white;
+  font-weight: 200;
+  font-size: 1.3em;
+  color: white;
+  padding: 14px 32px;
+  outline: none;
+  text-decoration: none;
+}
+
+.cardSpecial-back p:hover {
+  background-color: white;
+  color: #0b0f08;
+}
+/* Add this to your role.css file */
+
+/* Add this to your role.css file */
+
+.role-instruction {
+  text-align: center; /* Center the text */
+  color: white; /* Set text color */
+  font-size: 2em; /* Adjust font size for prominence */
+  margin: 30px 0; /* Add spacing above and below */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for better readability */
+  letter-spacing: 1px; /* Add spacing between letters for improved readability */
+}
+
+/* Optional: Add a background and padding */
+.section-instruction {
+  background: #e46fc5; /* Semi-transparent background */
+  padding: 20px; /* Add padding around the text */
+  border-radius: 10px; /* Round the corners */
+  margin: 20px auto; /* Center with margin */
+  max-width: 800px; /* Limit width for better appearance */
+}

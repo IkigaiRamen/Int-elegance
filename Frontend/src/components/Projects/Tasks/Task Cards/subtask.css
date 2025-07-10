@@ -1,0 +1,37 @@
+.subtask-card {
+    margin-left: 20px;
+    border-left: 2px solid #ddd;
+    padding-left: 10px;
+  }
+
+  .dd-item.expanded {
+    border: 2px solid purple;
+    border-radius: 8px;
+    background-color: #f9f6ff;
+  }
+  
+  .dd-item:hover {
+    border: 1px solid #ccc;
+  }
+  .taskboard .dd-item {
+    border-color: #db88c5 !important;
+    background-color: var(--card-color) !important;
+    position: relative !important;
+    margin-bottom: 15px !important;
+}
+
+.bg-light-blue {
+  background-color: #e3f2fd; /* Light blue */
+}
+
+.bg-light-yellow {
+  background-color: #fff9c4; /* Light yellow */
+}
+
+.bg-light-orange {
+  background-color: #ffe0b2; /* Light orange */
+}
+
+.bg-light-green {
+  background-color: #dcedc8; /* Light green */
+}

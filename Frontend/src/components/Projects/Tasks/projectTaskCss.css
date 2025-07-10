@@ -1,0 +1,56 @@
+.border-blue {
+    border-left: 5px solid blue;
+  }
+  
+  .border-yellow {
+    border-left: 5px solid yellow;
+  }
+  
+  .border-purple {
+    border-left: 5px solid purple;
+  }
+  
+  .border-green {
+    border-left: 5px solid green;
+  }
+  
+  .border-default {
+    border-left: 5px solid gray; /* Optional default color */
+  }
+  
+
+  
+  .header-template-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    margin-right: 8px;
+    /* Other icon styles can go here */
+}
+
+.header-template-wrap {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adding shadow effect */
+  border-bottom: 4px solid transparent; /* Placeholder for bottom border */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.header-template-wrap.to-do {
+  border-color: #007bff; /* Blue for To Do */
+}
+
+.header-template-wrap.in-progress {
+  border-color: #ffc107; /* Yellow for In Progress */
+}
+
+.header-template-wrap.needs-review {
+  border-color: #17a2b8; /* Teal for Needs Review */
+}
+
+.header-template-wrap.completed {
+  border-color: #28a745; /* Green for Completed */
+}

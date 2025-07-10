@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+:root {
+  --bg: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg");
+  --form-bg: #f0f4ff; /* Light blue background for the form */
+  --form-shadow: #8a7dff; /* Light purple shadow */
+  --form-primary-highlight: #4f5bff; /* Bright blue highlight */
+  --form-secondary-highlight: #d0e0ff; /* Soft purple highlight */
+  --font-size: 14pt;
+  --font-face: 'Fjalla One', sans-serif;
+  --font-color: #1e1e2f; /* Darker text color */
+}
+
+
+
+.contact-us {
+  background: var(--form-bg);
+  padding: 50px 50px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 15px 1px var(--form-shadow), 15px 15px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  font-size: var(--font-size);
+  line-height: calc(var(--font-size) * 2);
+  font-family: var(--font-face);
+  margin-bottom: calc(var(--font-size) * 2);
+  border: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+  background: var(--form-bg);
+  padding-left: 5px;
+  outline: none;
+  color: rgba(0, 0, 0, 1);
+  font-size: 14pt;
+}
+
+input:focus, textarea:focus {
+  border-bottom: 5px solid var(--form-shadow);
+}
+
+textarea {
+  min-height: 100px; /* Adjust the height of the textarea */
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: calc(var(--font-size) * 2);
+  padding: 0 20px;
+  background: var(--form-shadow);
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 1px 1px var(--form-primary-highlight), 3px 3px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+::selection {
+  background: var(--form-secondary-highlight);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border-bottom: 5px solid var(--form-primary-highlight);
+  -webkit-text-fill-color: var(--font-color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--form-bg) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,271 @@
+
+  
+@-webkit-keyframes init {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 56px;
+      height: 56px;
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes init {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 56px;
+      height: 56px;
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes puff {
+    0% {
+      top: 100%;
+      height: 0;
+      padding: 0;
+    }
+    100% {
+      top: 0%;
+      height: 130em;
+      padding: 0;
+    }
+  }
+  
+  @keyframes puff {
+    0% {
+      top: 100%;
+      height: 0;
+      padding: 0;
+    }
+    100% {
+      top: 0%;
+      height: 130em;
+      padding: 0;
+    }
+  }
+  
+  @-webkit-keyframes scaleIn {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scaleIn {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @-webkit-keyframes borderRadius {
+    0% {
+      -webkit-border-radius: 0;
+      border-radius: 0;
+    }
+    100% {
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  
+  @keyframes borderRadius {
+    0% {
+      -webkit-border-radius: 0;
+      border-radius: 0;
+    }
+    100% {
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  
+  @-webkit-keyframes moveDown {
+    0% {
+      top: 50%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  @keyframes moveDown {
+    0% {
+      top: 50%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  @-webkit-keyframes moveUp {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+  
+  @keyframes moveUp {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+  
+  @-webkit-keyframes moveIn {
+    0% {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes moveIn {
+    0% {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  @-webkit-keyframes materia {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes materia {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+  }
+
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+  }
+  
+  .profile-button {
+    background: #BA68C8;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .profile-button:hover {
+    background: #682773;
+  }
+  
+  .profile-button:focus {
+    background: #682773;
+    box-shadow: none;
+  }
+  
+  .profile-button:active {
+    background: #682773;
+    box-shadow: none;
+  }
+  
+  .back:hover {
+    color: #682773;
+    cursor: pointer;
+  }
+  .role-instruction {
+  text-align: center; /* Center the text */
+  color: white; /* Set text color */
+  font-size: 2em; /* Adjust font size for prominence */
+  margin: 30px 0; /* Add spacing above and below */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for better readability */
+  letter-spacing: 1px; /* Add spacing between letters for improved readability */
+
+}
+
+/* Optional: Add a background and padding */
+.section-instruction {
+  background: #e46fc5; /* Semi-transparent background */
+  padding: 20px; /* Add padding around the text */
+  border-radius: 10px; /* Round the corners */
+  margin: 20px auto; /* Center with margin */
+  max-width: 800px; /* Limit width for better appearance */
+  
+}
+.role-background {
+    background-image: url('gradient.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    position: fixed; /* Make it fixed to cover the viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Behind other content */
+    
+    /* Add the animation */
+  }
+  .role-background:after {
+    content: "";
+      background-image: url("gradient.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 133vmin;
+    height: 100vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .role-background:before {
+    content: "";
+    height: 0px;
+    padding: 0px;
+    border: 110em solid #313440;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+    z-index: 2;
+    display: block;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    -webkit-animation: puff_portrait 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+    animation: puff_portrait 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}

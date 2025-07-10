@@ -1,0 +1,66 @@
+
+.planned_task.dd-item {
+    border-bottom: 3px solid #cd201f !important; /* Change the color as needed */
+}
+.progress_task.dd-item {
+    border-bottom: 3px solid #ffc107 !important;
+}
+.review_task.dd-item {
+    border-bottom: 3px solid #ffaa8a !important;
+}
+.completed_task.dd-item {
+    border-bottom: 3px solid #28a745 !important;
+}
+.e-kanban .e-kanban-header .e-header-cells {
+    background-color: #ffffff; /* White background for better contrast */
+    color: #333; /* Dark text color for readability */
+    padding: 12px 15px; /* Add padding for a better appearance */
+    border: none; /* Remove borders around header cells */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-weight: bold; /* Bold text for emphasis */
+    text-align: center; /* Center align text in header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.e-kanban .e-kanban-header .e-header-cells:nth-child(1) { /* To Do */
+    background-color: #cd201f; /* Red for To Do */
+    color: white; /* White text for contrast */
+}
+
+.e-kanban .e-kanban-header .e-header-cells:nth-child(2) { /* In Progress */
+    background-color: #ffc107; /* Yellow for In Progress */
+    color: white; /* White text for contrast */
+}
+
+.e-kanban .e-kanban-header .e-header-cells:nth-child(3) { /* Needs Review */
+    background-color: #ffaa8a; /* Light orange for Needs Review */
+    color: white; /* White text for contrast */
+}
+
+.e-kanban .e-kanban-header .e-header-cells:nth-child(4) { /* Completed */
+    background-color: #28a745; /* Green for Completed */
+    color: white; /* White text for contrast */
+}
+
+.e-kanban .e-kanban-header .e-header-cells:hover {
+    opacity: 0.8; /* Change opacity on hover for effect */
+}
+
+/* Optional styles for header text */
+.e-kanban .e-kanban-header .e-header-cells .e-header-text {
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+.custom-column {
+    width: 33.33%; /* Adjust width as needed */
+    margin-top: 1rem; /* This is similar to mt-4 */
+  }
+  
+  @media (min-width: 1200px) {
+    .custom-column {
+      width: 25%;
+    }
+  }
+  
